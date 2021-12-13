@@ -1,0 +1,42 @@
+$nav-bar-padding: 8px;
+$nav-bar-height: 60px;
+
+.NavBar {
+    width: 100%;
+    position: relative;
+    background-image: linear-gradient(white, gray);
+    > nav {
+        width: 100%;
+        height: $nav-bar-height;
+        padding: $nav-bar-padding;
+        display: flex;
+        align-items: baseline;
+        justify-content: flex-end;
+
+        .nav-item {
+            padding-left: 10px;
+            height: $nav-bar-height;
+
+        }
+
+        .username {
+            font-size: 14pt;
+            color: black;
+            font-weight: bold;
+        }
+
+        .logout {
+            background-color: gray;
+        }
+
+        > .logo {
+            position: absolute;
+            top: $nav-bar-padding;
+            left: 8px;
+            img {
+                width: 80px;
+                height: calc(#{$nav-bar-height} - 2 * #{$nav-bar-padding});
+            }
+        }
+    }
+}
