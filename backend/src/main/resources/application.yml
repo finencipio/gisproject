@@ -1,23 +1,24 @@
-security:
-  master:
-    password: "HarDPassWorD"
-
 spring:
-
   datasource:
     driver-class-name: org.postgresql.Driver
-    url:        jdbc:postgresql://localhost:5432/testbase
-    username:   postgres
-    password:   admin
+    url: jdbc:postgresql://localhost:5432/testbase
+    username: postgres
+    password: admin
 
   jpa:
-    hibernate:
-      ddl-auto: update
     properties:
       hibernate:
         dialect: org.hibernate.spatial.dialect.postgis.PostgisDialect
         temp:
           use_jdbc_metadata_defaults: false
+    hibernate:
+      ddl-auto: validate
+    show-sql: true
+
+
+security:
+  master:
+    password: "HarDPassWorD"
 server:
   servlet:
     context-path: /gisg9

@@ -30,14 +30,14 @@ public class BeansConfig {
     }
 
 
-    @Bean
-    public DataSource datasource() {
-        return DataSourceBuilder.create()
-                .driverClassName("org.postgresql.Driver")
-                .url("jdbc:postgresql://localhost:5432/testbase")
-                .username("postgres")
-                .password("admin")
-                .build();
-    }
+//    @Bean
+//    public DataSource datasource() {
+//        return DataSourceBuilder.create()
+//                .driverClassName("org.postgresql.Driver")
+//                .url("jdbc:postgresql://localhost:5432/testbase")
+//                .username("postgres")
+//                .password("admin")
+//                .build();
+//    }
 
 }

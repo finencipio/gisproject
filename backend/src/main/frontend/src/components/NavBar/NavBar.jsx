@@ -33,17 +33,23 @@ class NavBar extends React.Component {
         return (
             <div className="NavBar">
                 <nav className="nav">
+                    <span className='app-icon'>
+                        <img src="/meteorology.png" />
+                        <span className='title'>GISg9</span>
+                    </span>
+                    <span className="endOfNavBar">
                     {
                         this.props.loggedUser !== null ?
-                            <span className="endOfNavBar">
+                            <span >
                                 <span className="nav-item"><Link to="/userProfile" disabled className="btn dark" name="currentUser">{this.formatUserName()}</Link></span>
                                 <span className="nav-item"><a className="logout btn" href='/'>Logout</a></span>
                             </span>
                             :
-                            <span className="endOfNavBar">
+                            <span>
                                 <span id="account" className="nav-item"><Link to="/login" className="btn">Login/Register</Link></span>
                             </span>
                     }
+                    </span>
                 </nav>
 
             </div>

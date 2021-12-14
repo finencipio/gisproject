@@ -5,6 +5,8 @@ import fer.gis.backend.model.enitity.User;
 import fer.gis.backend.model.enitity.VerificationToken;
 import fer.gis.backend.model.repository.UserRepository;
 import fer.gis.backend.model.repository.VerificationTokenRepository;
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -20,11 +22,10 @@ import java.util.stream.StreamSupport;
 
 
 @Service
-@RequiredArgsConstructor
+@AllArgsConstructor
 @Transactional
 public class UserServiceImpl implements UserService {
 
-    private final ApplicationEventPublisher eventPublisher;
     private final UserRepository userRepository;
     private final PasswordEncoder passwordEncoder;
     private final VerificationTokenRepository verificationTokenRepository;

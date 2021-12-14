@@ -4,20 +4,44 @@ $nav-bar-height: 60px;
 .NavBar {
     width: 100%;
     position: relative;
+    padding: 10px 50px;
     background-image: linear-gradient(white, gray);
+    .app-icon {
+        > img {
+            width: 50px;
+            margin: 10px;
+        }
+
+        width: fit-content;
+        display: flex;
+
+        .title {
+            align-self: center;
+            padding: 0 10px;
+            font-weight: bold;
+            font-size: 20pt;
+            color: black;
+        }
+    }
+    .endOfNavBar {
+        width: fit-content;
+        height: fit-content;
+    }
+
     > nav {
         width: 100%;
         height: $nav-bar-height;
         padding: $nav-bar-padding;
         display: flex;
-        align-items: baseline;
-        justify-content: flex-end;
+        align-items: center;
+        justify-content: space-between;
 
         .nav-item {
             padding-left: 10px;
             height: $nav-bar-height;
 
         }
+
 
         .username {
             font-size: 14pt;
