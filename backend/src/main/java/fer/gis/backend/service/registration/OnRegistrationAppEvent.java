@@ -1,6 +1,6 @@
 package fer.gis.backend.service.registration;
 
-import fer.gis.backend.model.enitity.User;
+import fer.gis.backend.model.enitity.user.User;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import org.springframework.context.ApplicationEvent;

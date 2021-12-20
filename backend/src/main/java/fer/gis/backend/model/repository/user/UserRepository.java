@@ -1,6 +1,6 @@
-package fer.gis.backend.model.repository;
+package fer.gis.backend.model.repository.user;
 
-import fer.gis.backend.model.enitity.User;
+import fer.gis.backend.model.enitity.user.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 

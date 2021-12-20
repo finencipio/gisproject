@@ -1,6 +1,6 @@
 package fer.gis.backend.service.registration;
 
-import fer.gis.backend.model.enitity.User;
+import fer.gis.backend.model.enitity.user.User;
 import fer.gis.backend.service.user.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.ApplicationListener;

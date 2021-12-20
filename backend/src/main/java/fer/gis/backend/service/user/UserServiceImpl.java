@@ -1,14 +1,11 @@
 package fer.gis.backend.service.user;
 
 import fer.gis.backend.model.dto.user.UserRegistrationModel;
-import fer.gis.backend.model.enitity.User;
-import fer.gis.backend.model.enitity.VerificationToken;
-import fer.gis.backend.model.repository.UserRepository;
-import fer.gis.backend.model.repository.VerificationTokenRepository;
+import fer.gis.backend.model.enitity.user.User;
+import fer.gis.backend.model.enitity.user.VerificationToken;
+import fer.gis.backend.model.repository.user.UserRepository;
+import fer.gis.backend.model.repository.user.VerificationTokenRepository;
 import lombok.AllArgsConstructor;
-import lombok.NoArgsConstructor;
-import lombok.RequiredArgsConstructor;
-import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;

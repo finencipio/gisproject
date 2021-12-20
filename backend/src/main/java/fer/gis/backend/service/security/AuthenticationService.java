@@ -1,8 +1,8 @@
 package fer.gis.backend.service.security;
 
 import com.auth0.jwt.JWT;
-import fer.gis.backend.model.enitity.User;
-import fer.gis.backend.model.repository.UserRepository;
+import fer.gis.backend.model.enitity.user.User;
+import fer.gis.backend.model.repository.user.UserRepository;
 import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.crypto.password.PasswordEncoder;

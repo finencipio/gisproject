@@ -1,4 +1,4 @@
-package fer.gis.backend.model.enitity;
+package fer.gis.backend.model.enitity.user;
 
 import lombok.Data;
 import lombok.RequiredArgsConstructor;
