@@ -17,7 +17,7 @@ import java.sql.Timestamp;
 @Data
 @IdClass(TempPK.class)
 public class TemperatureMesurement implements Serializable {
-    @Column(name = "mrsetid")
+    @Column(name = "msetid")
     private Long mSetId;
     @Id
     @Column(name = "mrtime")

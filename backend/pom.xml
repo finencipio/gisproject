@@ -67,9 +67,14 @@
 
         <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-spatial -->
         <dependency>
+            <groupId>com.vividsolutions</groupId>
+            <artifactId>jts</artifactId>
+            <version>1.13</version>
+        </dependency>
+        <dependency>
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-spatial</artifactId>
-            <version>${hibernate-spatial-version}</version>
+            <version>5.2.5.Final</version>
         </dependency>
 
         <dependency>

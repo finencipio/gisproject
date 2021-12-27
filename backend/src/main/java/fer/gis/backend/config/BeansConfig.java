@@ -1,5 +1,6 @@
 package fer.gis.backend.config;
 
+import com.bedatadriven.jackson.datatype.jts.JtsModule;
 import org.springframework.boot.jdbc.DataSourceBuilder;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
