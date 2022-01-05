@@ -22,7 +22,7 @@ public class TemperatureController {
     @Autowired
     private TemperatureRepository temperatureRepository;
 
-    @GetMapping("/temp")
+    @PostMapping("/temp")
     public Collection<TemperatureMesurement> getAllMeasurementsForTimestamp(@RequestBody TempGet body) {
         return temperatureRepository.findAllByMrTimeEquals(body.getTimestamp());
     }
