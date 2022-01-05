@@ -3,6 +3,7 @@ import '../style.scss';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 import { connect } from 'react-redux';
+import {urlToBackendServer} from '../../../config/static.config';
 
 import * as actionTypes from '../../../store/actions';
 
@@ -29,7 +30,7 @@ class Login extends React.Component {
 
     handleSubmit(e) {
         this.setState({ loading: true })
-        axios.post('/login', {
+        axios.post(`${urlToBackendServer}/login`, {
             username: this.state.username,
             password: this.state.password
         }).then(res => {

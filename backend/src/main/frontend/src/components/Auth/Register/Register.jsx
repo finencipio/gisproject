@@ -2,6 +2,7 @@ import React from 'react';
 import '../style.scss'
 import { Link } from 'react-router-dom';
 import axios from 'axios';
+import {urlToBackendServer} from '../../../config/static.config';
 
 class Register extends React.Component {
 
@@ -31,14 +32,14 @@ class Register extends React.Component {
 
     handleSubmit(e) {
         this.setState({ loading: true });
-        axios.post('/users/register', {
+        axios.post(`${urlToBackendServer}/users/register`, {
             email: this.state.email,
             username: this.state.username,
             password: this.state.password,
             firstname: this.state.firstname,
             lastname: this.state.lastname
         }).then(res => {
-            this.props.history.push(`/login`);
+            this.props.history.push(`${urlToBackendServer}/login`);
             this.setState({ loading: false });
         }).catch(err => {
             alert(err.response ? err.response.data.message : 'Fail');
