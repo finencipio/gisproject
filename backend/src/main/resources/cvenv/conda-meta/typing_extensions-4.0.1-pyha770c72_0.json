@@ -1,0 +1,107 @@
+{
+  "build": "pyha770c72_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/noarch",
+  "constrains": [],
+  "depends": [
+    "python >=3.6"
+  ],
+  "extracted_package_dir": "C:\\ProgramData\\Anaconda3\\pkgs\\typing_extensions-4.0.1-pyha770c72_0",
+  "features": "",
+  "files": [
+    "Lib/site-packages/typing_extensions-4.0.1.dist-info/INSTALLER",
+    "Lib/site-packages/typing_extensions-4.0.1.dist-info/LICENSE",
+    "Lib/site-packages/typing_extensions-4.0.1.dist-info/METADATA",
+    "Lib/site-packages/typing_extensions-4.0.1.dist-info/RECORD",
+    "Lib/site-packages/typing_extensions-4.0.1.dist-info/REQUESTED",
+    "Lib/site-packages/typing_extensions-4.0.1.dist-info/WHEEL",
+    "Lib/site-packages/typing_extensions-4.0.1.dist-info/direct_url.json",
+    "Lib/site-packages/typing_extensions.py",
+    "Lib/site-packages/__pycache__/typing_extensions.cpython-310.pyc"
+  ],
+  "fn": "typing_extensions-4.0.1-pyha770c72_0.tar.bz2",
+  "license": "PSF-2.0",
+  "license_family": "PSF",
+  "link": {
+    "source": "C:\\ProgramData\\Anaconda3\\pkgs\\typing_extensions-4.0.1-pyha770c72_0",
+    "type": 1
+  },
+  "md5": "1fc03816925d3cb7fdab9ab234e7fea7",
+  "name": "typing_extensions",
+  "noarch": "python",
+  "package_tarball_full_path": "C:\\ProgramData\\Anaconda3\\pkgs\\typing_extensions-4.0.1-pyha770c72_0.tar.bz2",
+  "package_type": "noarch_python",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "site-packages/typing_extensions-4.0.1.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "sha256_in_prefix": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "size_in_bytes": 5
+      },
+      {
+        "_path": "site-packages/typing_extensions-4.0.1.dist-info/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "ff17ce94e102024deb68773eb1cc74ca76da4e658f373531f0ac22d68a6bb1ad",
+        "sha256_in_prefix": "ff17ce94e102024deb68773eb1cc74ca76da4e658f373531f0ac22d68a6bb1ad",
+        "size_in_bytes": 12755
+      },
+      {
+        "_path": "site-packages/typing_extensions-4.0.1.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "899ff91ce3596415ed17892ba33f883d960897d33c204d41d3447cd9d59c06a1",
+        "sha256_in_prefix": "899ff91ce3596415ed17892ba33f883d960897d33c204d41d3447cd9d59c06a1",
+        "size_in_bytes": 1736
+      },
+      {
+        "_path": "site-packages/typing_extensions-4.0.1.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "63ed98fe9402a831ced3986c4e195964e175aabe30aaedaa9c1635b2c4cace49",
+        "sha256_in_prefix": "63ed98fe9402a831ced3986c4e195964e175aabe30aaedaa9c1635b2c4cace49",
+        "size_in_bytes": 769
+      },
+      {
+        "_path": "site-packages/typing_extensions-4.0.1.dist-info/REQUESTED",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "site-packages/typing_extensions-4.0.1.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "2d538f2ff603304886bd12e00cad612e47e11429d373170061926da4d16c7acd",
+        "sha256_in_prefix": "2d538f2ff603304886bd12e00cad612e47e11429d373170061926da4d16c7acd",
+        "size_in_bytes": 81
+      },
+      {
+        "_path": "site-packages/typing_extensions-4.0.1.dist-info/direct_url.json",
+        "path_type": "hardlink",
+        "sha256": "cbbdc4814879d7a6366c3306faed3be2ed096e8e77b1e412d327fce689ceb6c0",
+        "sha256_in_prefix": "cbbdc4814879d7a6366c3306faed3be2ed096e8e77b1e412d327fce689ceb6c0",
+        "size_in_bytes": 113
+      },
+      {
+        "_path": "site-packages/typing_extensions.py",
+        "path_type": "hardlink",
+        "sha256": "d6eaa2fd14a523b828b3878907f344577779c10c334d4407777fe3ae46d3a3c4",
+        "sha256_in_prefix": "d6eaa2fd14a523b828b3878907f344577779c10c334d4407777fe3ae46d3a3c4",
+        "size_in_bytes": 87149
+      },
+      {
+        "_path": "Lib/site-packages/__pycache__/typing_extensions.cpython-310.pyc",
+        "path_type": "pyc_file"
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "82e04075a82e60f687eb6e455a1315e5f39f335704b0627bfe3c87446e4ae89c",
+  "size": 26585,
+  "subdir": "noarch",
+  "timestamp": 1638335081969,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/noarch/typing_extensions-4.0.1-pyha770c72_0.tar.bz2",
+  "version": "4.0.1"
+}
