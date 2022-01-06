@@ -11,7 +11,7 @@ import java.sql.Timestamp;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class TempPK implements Serializable {
+public class RecordPK implements Serializable {
     @NotNull
     long location;
     @NotNull

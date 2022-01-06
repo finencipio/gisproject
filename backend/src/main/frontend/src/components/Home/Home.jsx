@@ -1,7 +1,6 @@
 import React from 'react';
 import axios from 'axios';
 import {connect} from "react-redux";
-import * as actionTypes from "../../store/actions";
 import {urlToBackendServer} from '../../config/static.config';
 
 class Home extends React.Component {
@@ -14,7 +13,7 @@ class Home extends React.Component {
         this.handleSubmit = this.handleSubmit.bind(this);
     }
 
-    handleSubmit(e) {
+    handleSubmit() {
         axios.post(`${urlToBackendServer}/temp`, {
             timestamp: "2020-09-12 06:11:00"
         }).then(res => {
