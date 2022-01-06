@@ -1,15 +1,20 @@
 package fer.gis.backend.model.repository.temp;
 
-import fer.gis.backend.model.enitity.temp.TempPK;
-import fer.gis.backend.model.enitity.temp.TemperatureMesurement;
+import fer.gis.backend.model.enitity.temp.RecordPK;
+import fer.gis.backend.model.enitity.temp.TemperatureRecord;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.query.Param;
 
 import java.sql.Timestamp;
 import java.util.List;
 
-public interface TemperatureRepository extends JpaRepository<TemperatureMesurement, TempPK> {
+public interface TemperatureRepository extends JpaRepository<TemperatureRecord, RecordPK> {
     @Override
-    List<TemperatureMesurement> findAll();
+    List<TemperatureRecord> findAll();
 
-    List<TemperatureMesurement> findAllByMrTimeEquals(Timestamp timestamp);
+    List<TemperatureRecord> findAllByMrTimeEquals(Timestamp timestamp);
+
+    @Query("SELECT AVG(value) FROM meteo_records WHERE sysName = 'OutTemp' AND locid = :id")
+    double findAverageOfTemperatures(@Param("id") int locid);
 }

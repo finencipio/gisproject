@@ -7,7 +7,6 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
-import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 import java.sql.Timestamp;
 
@@ -15,9 +14,9 @@ import java.sql.Timestamp;
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-@IdClass(TempPK.class)
-public class TemperatureMesurement implements Serializable {
-    @Column(name = "msetid")
+@IdClass(RecordPK.class)
+public class TemperatureRecord implements Serializable {
+    @Column(name = "mrsetid")
     private Long mSetId;
     @Id
     @Column(name = "mrtime")
