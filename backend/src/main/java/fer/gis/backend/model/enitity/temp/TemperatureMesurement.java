@@ -32,7 +32,7 @@ public class TemperatureMesurement implements Serializable {
     @Column(name = "sysname")
     private String sysName;
 
-    @ManyToOne
+    @ManyToOne(targetEntity = Location.class)
     @JoinColumn(name = "locid")
     @Id
     private Location location;
