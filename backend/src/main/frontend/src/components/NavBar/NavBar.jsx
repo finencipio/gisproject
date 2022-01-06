@@ -38,17 +38,17 @@ class NavBar extends React.Component {
                         <span className='title'>GISg9</span>
                     </span>
                     <span className="endOfNavBar">
-                    {
-                        this.props.loggedUser !== null ?
-                            <span >
-                                <span className="nav-item"><Link to="/userProfile" disabled className="btn dark" name="currentUser">{this.formatUserName()}</Link></span>
-                                <span className="nav-item"><a className="logout btn" href='/'>Logout</a></span>
-                            </span>
-                            :
-                            <span>
-                                <span id="account" className="nav-item"><Link to="/login" className="btn">Login/Register</Link></span>
-                            </span>
-                    }
+                        {
+                            this.props.loggedUser !== null ?
+                                <span >
+                                    <span className="nav-item"><Link to="/userProfile" disabled className="btn dark" name="currentUser">{this.formatUserName()}</Link></span>
+                                    <span className="nav-item"><a className="logout btn" href='/'>Logout</a></span>
+                                </span>
+                                :
+                                <span>
+                                    <span id="account" className="nav-item"><Link to="/login" className="btn">Login/Register</Link></span>
+                                </span>
+                        }
                     </span>
                 </nav>
 

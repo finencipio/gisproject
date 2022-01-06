@@ -11,6 +11,10 @@ import {
 } from "react-router-dom";
 import NavBar from './components/NavBar/NavBar';
 import Home from './components/Home/Home';
+import Map from './components/Map/Map';
+
+
+
 
 function App() {
   return (
@@ -22,7 +26,7 @@ function App() {
             <Switch>
               <Route exact path="/login" component={Login} />
               <Route exact path="/register" component={Register} />
-              <Route exact path="/" component={Home}/>
+              <Route exact path="/" component={Home} />
             </Switch>
           </div>
         </div>
