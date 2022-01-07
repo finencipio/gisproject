@@ -20,9 +20,9 @@ import java.util.stream.Collectors;
 @RestController
 public class InterpolationController {
 
-    @PostMapping("/interpolate")
-    public Collection<PointWithValue> getAllMeasurementsForTimestamp(@RequestBody InterpolateBody body) {
-        ProcessBuilder builder = new ProcessBuilder("src/main/resources/cvenv/python", "./intEng.py");
+    @PostMapping("/int_to_grid")
+    public Collection<PointWithValue> getInterpolatedGrid(@RequestBody IntToGrid body) {
+        ProcessBuilder builder = new ProcessBuilder("src/main/resources/cvenv/python", "./intEng.py", "-g");
         builder.directory(new File("src/main/resources"));
         try {
             Process exec = builder.start();
@@ -42,11 +42,41 @@ public class InterpolationController {
         }
     }
 
+    @PostMapping("/int_to_points")
+    public Collection<PointWithValue> getInterpolatedPoints(@RequestBody IntToPoints body) {
+        ProcessBuilder builder = new ProcessBuilder("src/main/resources/cvenv/python", "./intEng.py", "-p");
+        builder.directory(new File("src/main/resources"));
+        try {
+            Process exec = builder.start();
+            try(BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(exec.getOutputStream()))) {
+                Gson gson = new Gson();
+                bw.write(gson.toJson(body));
+            }
+            try(var reader = new InputStreamReader(exec.getInputStream())) {
+                Gson gson = new Gson();
+
+                PointWithValue[] result = gson.fromJson(reader, PointWithValue[].class);
+
+                return Arrays.asList(result);
+            }
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
     @Data
     @NoArgsConstructor
     @AllArgsConstructor
-    public static class InterpolateBody implements Serializable {
+    public static class IntToGrid implements Serializable {
         Collection<PointWithValue> data;
+    }
+
+    @Data
+    @NoArgsConstructor
+    @AllArgsConstructor
+    public static class IntToPoints implements Serializable {
+        Collection<PointWithValue> src;
+        Collection<PointWithValue> dst;
     }
 
     @Data
