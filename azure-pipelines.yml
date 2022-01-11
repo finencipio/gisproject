@@ -27,6 +27,6 @@ steps:
     azureSubscription: 'Azure for Students(12b1f0a8-5506-4b53-91e3-07e581324c20)'
     appType: 'webAppLinux'
     WebAppName: 'g9meteo'
-    packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
+    packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.jar'
     RuntimeStack: 'JAVA|11-java11'
     StartupCommand: 'mvn spring-boot:run'
