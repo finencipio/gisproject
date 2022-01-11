@@ -29,4 +29,4 @@ steps:
     WebAppName: 'g9meteo'
     packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.jar'
     RuntimeStack: 'JAVA|11-java11'
-    StartupCommand: 'mvn spring-boot:run'
+    StartupCommand: 'java -jar target/backend*.jar'
