@@ -1,0 +1,29 @@
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://g9-postgres.postgres.database.azure.com:5432/postgres
+    username: g9_admin
+    password: Giscina2021
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.spatial.dialect.postgis.PostgisDialect
+#        show_sql: true
+#        format_sql: true
+        temp:
+          use_jdbc_metadata_defaults: false
+    hibernate:
+      ddl-auto: update
+logging:
+  level:
+    org.springframework.web: DEBUG
+    fer.gis.backend.web.rest: DEBUG
+#    org.hibernate.type: trace
+
+
+security:
+  master:
+    password: "HarDPassWorD"
+#server:
+#  servlet:
+#    context-path: /gisg9
