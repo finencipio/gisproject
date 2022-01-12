@@ -1,4 +1,4 @@
 module.exports = {
-    urlToBackendServer: 'http://localhost:8080',
+    urlToBackendServer: 'https://g9meteo.herokuapp.com/',
     urlToFrontServer: 'http://localhost:8080'
 }
